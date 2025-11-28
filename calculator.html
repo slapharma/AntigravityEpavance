@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omega-3 Index Calculator | EPAVANCE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="EPAVANCE Logo">
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html#product">Products</a></li>
+                    <li><a href="index.html#science">Science</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="index.html#product" class="btn btn-primary btn-sm">Buy Now</a>
+        </div>
+    </header>
+
+    <main class="calculator-page">
+        <section class="calculator-hero">
+            <div class="container">
+                <h1>Omega-3 Index Calculator</h1>
+                <p class="lead">Estimate the amount of EPA+DHA needed to reach your target Omega-3 Index.</p>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <div class="container">
+                <div class="calculator-container">
+                    <div class="calculator-inputs">
+
+                        <!-- Target Level -->
+                        <div class="input-group">
+                            <div class="label-row">
+                                <label for="target-level">Target Omega-3 Index Level (%)</label>
+                                <span class="value-display" id="target-display">8.0%</span>
+                            </div>
+                            <div class="slider-container">
+                                <input type="range" id="target-level" min="4" max="12" step="0.1" value="8.0">
+                                <div class="slider-labels">
+                                    <span>4%</span>
+                                    <span>8%</span>
+                                    <span>12%</span>
+                                </div>
+                            </div>
+                            <p class="input-help">An Omega-3 Index of 8% - 12% is considered optimal.</p>
+                        </div>
+
+                        <!-- Current Level -->
+                        <div class="input-group">
+                            <label for="current-level">Current Omega-3 Index Level (%)</label>
+                            <div class="number-input-wrapper">
+                                <input type="number" id="current-level" min="0" max="12" step="0.1"
+                                    placeholder="e.g. 4.0">
+                            </div>
+                            <p class="input-help">Enter your most recent Omega-3 Index test result.</p>
+                        </div>
+
+                        <!-- Omega-3 Form -->
+                        <div class="input-group">
+                            <label>Omega-3 Form (optional)</label>
+                            <div class="form-options">
+                                <button type="button" class="form-btn" data-form="ethyl-ester">Ethyl Ester</button>
+                                <button type="button" class="form-btn" data-form="triglyceride">Triglyceride</button>
+                                <button type="button" class="form-btn" data-form="phospholipid">Phospholipid</button>
+                                <button type="button" class="form-btn active" data-form="unknown">I don't know</button>
+                            </div>
+                            <p class="input-help">Different forms of Omega-3 have different absorption rates. Select the
+                                form you are taking, or "I don't know".</p>
+                        </div>
+
+                    </div>
+
+                    <div class="calculator-result">
+                        <div class="result-card">
+                            <h3>Amount of EPA+DHA needed per day to reach your target blood level</h3>
+                            <div class="result-value">
+                                <span id="result-number">0</span>
+                                <span class="unit">mg</span>
+                            </div>
+                            <p class="result-note">This is an estimate based on your inputs.</p>
+                            <a href="index.html#product" class="btn btn-primary btn-block">Shop EPAVANCE Omega-3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disclaimer">
+                    <p><strong>Disclaimer:</strong> This calculator provides an estimate based on population averages.
+                        Individual responses to Omega-3 supplementation can vary due to genetics, diet, weight, and
+                        other factors. It is always recommended to re-test your Omega-3 Index after 3-4 months of
+                        supplementation to ensure you have reached your target. This tool is not intended to provide
+                        medical advice.</p>
+                    <p class="reference">Based on the model by Walker et al. (2019), Am J Clin Nutr.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 EPAVANCE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
