@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Epavance - Clinical Nutrition for IBD</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#008080",
+                        "primary-dark": "#006666",
+                        "secondary": "#F86409",
+                        "secondary-dark": "#d65304",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d131b] dark:text-slate-100 font-display transition-colors duration-200">
+<header class="sticky top-0 z-50 w-full border-b border-[#e7ecf3] dark:border-slate-700 bg-background-light dark:bg-background-dark/95 backdrop-blur-sm">
+<div class="px-4 md:px-10 py-3 flex items-center justify-between mx-auto max-w-[1280px]">
+<div class="flex items-center gap-4 text-[#0d131b] dark:text-white">
+<a class="flex items-center gap-2 group" href="#">
+<div class="text-primary">
+<span class="material-symbols-outlined !text-[32px]">medication_liquid</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em] text-[#0d131b] dark:text-white group-hover:text-primary transition-colors">Epavance</h2>
+</a>
+</div>
+<nav class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-6 lg:gap-9">
+<a class="text-sm font-medium hover:text-primary transition-colors text-[#0d131b] dark:text-slate-200" href="#">Science/Evidence</a>
+<a class="text-sm font-medium hover:text-primary transition-colors text-[#0d131b] dark:text-slate-200" href="#">Our Story</a>
+<a class="text-sm font-medium hover:text-primary transition-colors text-[#0d131b] dark:text-slate-200" href="#">Healthcare Professionals</a>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary hover:bg-primary-dark transition-colors text-white text-sm font-bold shadow-md shadow-primary/20">
+<span>Shop</span>
+</button>
+<button class="flex items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-[#e7ecf3] dark:bg-slate-700 hover:bg-[#dce3ed] dark:hover:bg-slate-600 transition-colors text-[#0d131b] dark:text-white">
+<span class="material-symbols-outlined text-[20px]">shopping_basket</span>
+</button>
+</div>
+</nav>
+<button class="md:hidden p-2 text-[#0d131b] dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<section class="relative w-full overflow-hidden">
+<div class="px-4 md:px-10 py-12 md:py-20 mx-auto max-w-[1280px]">
+<div class="flex flex-col-reverse lg:flex-row gap-10 items-center">
+<div class="flex flex-col gap-6 lg:w-1/2">
+<div class="flex flex-col gap-4 text-left">
+<div class="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary dark:text-teal-400">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                        Medical Food for IBD
+                    </div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-[-0.033em] text-[#0d131b] dark:text-white">
+                        Clinical Nutrition for <span class="text-primary">Remission &amp; Relief.</span>
+</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 font-normal leading-relaxed max-w-[540px]">
+                        Foods for special medical purposes, scientifically formulated to support mucosal healing and provide symptom relief for patients with Crohn’s and Colitis.
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-3 pt-2">
+<button class="flex h-12 items-center justify-center rounded-lg bg-primary hover:bg-primary-dark transition-all text-white px-8 text-base font-bold shadow-lg shadow-primary/25">
+                        Start Your Journey
+                    </button>
+<button class="flex h-12 items-center justify-center rounded-lg bg-white dark:bg-slate-800 border border-[#cfd9e7] dark:border-slate-600 text-[#0d131b] dark:text-white hover:bg-slate-50 dark:hover:bg-slate-700 transition-all px-8 text-base font-bold">
+                        View Clinical Data
+                    </button>
+</div>
+<div class="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400 mt-2">
+<div class="flex -space-x-2">
+<div class="h-8 w-8 rounded-full border-2 border-white dark:border-slate-800 bg-slate-200 bg-cover bg-center" data-alt="Portrait of a smiling patient" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAmWlbGE4kMy9M3V9-NM8Uk-pKmoObiZD6HS6s-gRnmu1qxXPM3OtMUViFco5PPv8lD4GME9AYOY4bkIQPDtDZEQMu70XIil4NpMMcseuI3psqQvmG8-UoChVheBY2RLylMfeIH_K9jqecxfVRrFDCjJUeTGU_Ek8UwUecCow9-hu6CM8JkTvgpnYQhHCCRFNIFsa03wJXgvaPCS8Po7hqtVI-D4KqkjKMAP7slgcZLyCC8INdQT7yWaxdacGyy41T-kuOi1XPiDXd0');"></div>
+<div class="h-8 w-8 rounded-full border-2 border-white dark:border-slate-800 bg-slate-200 bg-cover bg-center" data-alt="Portrait of a happy customer" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBi8RUv4FSzEwBX3SjeYri6ryIs43OEF5CNtsOJTroKHBaQpot6qkPJYwcKIe-YDv7W6ZiFu_MBpBywO3cUOCdaTmr0ks5WiddC1oAbNpPFsWqn1TtkGN78HoKiTjRWuF7XARYA6RL-wTbTZQp8cK_sn6GkIx16lToOeW0PMEtrtdaW1fIutw7LVPgnwS_QwTOJqjClz-UAs6rmDy2XN6g3o0EIzF0zKUPnBvdcJfaS7IaIu2iyn26amZEHGXfDvX3OiCF4R1HHw_-8');"></div>
+<div class="h-8 w-8 rounded-full border-2 border-white dark:border-slate-800 bg-slate-200 bg-cover bg-center" data-alt="Portrait of a satisfied user" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-VPvYU_60mBenUmk9f6TP-JodmlnzCCeQv9vIIaJpy2EK8I1ntlv0d7P30W7v7g8GNe294Oc9IOV7PpZAsYjNUE0svZIPTDmDGyBD9C_oeceSb8GOOwFqLk9YF8ZSDjx5obyoBAHhqfCtG4qif64VmkQ3fRM5PS5fvnjQcQRU_9vfmi-sgz6pckIRraM78jN2Cp9w-D864kOlJLkvmBocuov2VYOytf9F1OvqYWH8ePEZSdAoWlpZ-IpjM4ziu8swXb0jBmBu58fK');"></div>
+</div>
+<p>Trusted by 10,000+ patients</p>
+</div>
+</div>
+<div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-slate-200 dark:bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Two product packages of Epavance standing on a clean clinical surface with soft blue lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuApjAuZCYMcBYPxScjQ7iaoufcsljUODc6JFGb9Kwv0Hf7EdeUufGWJ9E-wudePvradZDP9BSpZ7QyIbWWo86ugVWyxNdp3QDPFlsthOMm7ny5BDscHVeCa5SkubAnQKiMTCVty9nXjhNbtHwTXRgG4BX3CTdGRf2OFisR9tYqCZf51Zg64RtHEV__Z0yFrwx_3tOcdVDXNMGa7njOcDEilxtdhtpu91PefxV66tw-JD3z0cufn1xvF3FLy9RZel0mBdrXwnrQTdiMn');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-slate-900 border-y border-[#e7ecf3] dark:border-slate-800">
+<div class="px-4 md:px-10 py-16 mx-auto max-w-[1280px]">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight text-[#0d131b] dark:text-white">
+                    Trusted Clinical Standards
+                </h2>
+<p class="text-base text-slate-600 dark:text-slate-300 max-w-[720px]">
+                    Our formulations are designed with safety, efficacy, and tolerability at the forefront of patient care, meeting strict medical food regulations.
+                </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfd9e7] dark:border-slate-700 bg-background-light dark:bg-background-dark p-6 hover:border-primary/50 transition-colors group">
+<div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">science</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-[#0d131b] dark:text-white mb-1">Clinically Tested</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">Proven efficacy in reducing inflammation markers.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfd9e7] dark:border-slate-700 bg-background-light dark:bg-background-dark p-6 hover:border-primary/50 transition-colors group">
+<div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">public</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-[#0d131b] dark:text-white mb-1">Made in the UK</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">Manufactured in GMP certified facilities.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfd9e7] dark:border-slate-700 bg-background-light dark:bg-background-dark p-6 hover:border-primary/50 transition-colors group">
+<div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">medical_services</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-[#0d131b] dark:text-white mb-1">HCP Recommended</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">Trusted by gastroenterologists and dietitians.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[#cfd9e7] dark:border-slate-700 bg-background-light dark:bg-background-dark p-6 hover:border-primary/50 transition-colors group">
+<div class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">verified_user</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-[#0d131b] dark:text-white mb-1">Allergen Safe</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">Gluten-free, lactose-free, and low FODMAP.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 px-4 md:px-10">
+<div class="mx-auto max-w-[1280px] bg-primary rounded-3xl overflow-hidden shadow-2xl text-white">
+<div class="flex flex-col lg:flex-row">
+<div class="p-8 md:p-12 lg:w-1/2 flex flex-col justify-center gap-6">
+<h2 class="text-3xl md:text-4xl font-bold">Science-Backed Relief</h2>
+<p class="text-teal-50 text-lg leading-relaxed">
+                    Epavance utilizes a proprietary blend of bio-active peptides and specific amino acids tailored to restore gut barrier integrity. Our clinical trials have demonstrated a significant reduction in calprotectin levels within 4 weeks of use.
+                </p>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-teal-200">check_circle</span>
+<span class="font-medium">Reduces intestinal inflammation</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-teal-200">check_circle</span>
+<span class="font-medium">Promotes mucosal healing</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-teal-200">check_circle</span>
+<span class="font-medium">Supports microbiome balance</span>
+</div>
+</div>
+<a class="mt-4 inline-flex items-center gap-2 font-bold text-white hover:text-teal-100 transition-colors" href="#">
+                    Read the full clinical study
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="lg:w-1/2 bg-[#004d4d] min-h-[300px] relative">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-60" data-alt="Abstract microscopic view of cells illustrating gut healing and biology" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXTtN4p4G9mW06f6sSetnW4Qw_GfusDAAt6kSmHpCFNl9ECh__vBTrg0pvk0-18AEj6EKTtIW6_oNW8fEMmJ4Szj2EZXDEonz2sBJE_bP5coxTyTwsiDxES5gd60uhUi8cTTQKI5-g5Zy5qdNCxhRDA1N21iS-ASqB3HHUDAEtyDz_5XDfeFeume08hFoTGS1HMOsqDGg-uAv3Z7oIXwqCGkWOmIDwMcMeJVs2RFFWjByfozxNl0vCFz0x65LJe7-AJ8GGJzeD_vKZ');"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl max-w-xs text-center">
+<div class="text-4xl font-black mb-1">87%</div>
+<div class="text-sm font-medium text-teal-100">Patient reported symptom improvement within 2 weeks</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 px-4 md:px-10" id="shop">
+<div class="mx-auto max-w-[1280px]">
+<div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
+<div>
+<h2 class="text-3xl font-bold text-[#0d131b] dark:text-white mb-2">Our Solutions</h2>
+<p class="text-slate-600 dark:text-slate-400">Targeted nutrition for every stage of your journey.</p>
+</div>
+<a class="text-primary font-bold hover:underline flex items-center gap-1" href="#">
+                Compare Products <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+<div class="flex flex-col rounded-2xl border border-[#cfd9e7] dark:border-slate-700 bg-white dark:bg-slate-800 p-6 lg:p-8 hover:shadow-xl hover:border-primary/30 transition-all duration-300">
+<div class="flex items-start justify-between mb-6">
+<div class="flex flex-col">
+<span class="bg-primary/10 text-primary dark:text-teal-300 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full w-fit mb-3">Daily Care</span>
+<h3 class="text-2xl font-bold text-[#0d131b] dark:text-white">Epavance Maintenance</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-1">For sustained remission &amp; gut health.</p>
+</div>
+<div class="w-24 h-24 bg-slate-100 dark:bg-slate-700 rounded-lg flex items-center justify-center bg-contain bg-no-repeat bg-center" data-alt="Epavance Maintenance product packaging in white and blue bottle" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAem1jJ48w2phAuuH87wOiITS1unAwv0YWPAMRLaNWfY4-kKPYeiR1hI6eN7etG1A90ql-ZfmWHZawnmSRT6Bg3-lu_lJ3jUtheKum0lwWlQ-87Ja_EgaEU9QZ4UuQsyzlAslEo6d86IF34DslXJU-s_ENTZ9GIGcOzv250J0k2i90bhank81lHpMBVINcsS7Dlgw-gX1I01NM0XwkMNz7luTugkEcmI_ZMHHLhILL-0j1pUJOBg9zq-io23D-CMk9iV6PwERNU-L1n');"></div>
+</div>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-4xl font-black text-[#0d131b] dark:text-white">£29.99</span>
+<span class="text-slate-500 font-medium">/ pack (28 days)</span>
+</div>
+<ul class="flex flex-col gap-3 mb-8 flex-1">
+<li class="flex items-center gap-3 text-sm text-[#0d131b] dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                        Daily gut barrier protection
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#0d131b] dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                        Sustained release energy
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#0d131b] dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                        Added vitamins &amp; minerals
+                    </li>
+</ul>
+<button class="w-full h-12 rounded-lg bg-[#e7ecf3] dark:bg-slate-700 hover:bg-[#dce3ed] dark:hover:bg-slate-600 text-[#0d131b] dark:text-white font-bold transition-colors flex items-center justify-center gap-2">
+                    Add to Cart <span class="material-symbols-outlined text-sm">shopping_basket</span>
+</button>
+</div>
+<div class="flex flex-col rounded-2xl border border-secondary/30 bg-white dark:bg-slate-800 p-6 lg:p-8 hover:shadow-xl hover:shadow-secondary/5 transition-all duration-300 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-bl-[100px] -mr-4 -mt-4"></div>
+<div class="flex items-start justify-between mb-6 relative z-10">
+<div class="flex flex-col">
+<span class="bg-secondary/10 text-secondary dark:text-orange-300 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full w-fit mb-3">Acute Care</span>
+<h3 class="text-2xl font-bold text-[#0d131b] dark:text-white">EPAVANCE+</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-1">High-caloric support for flare-ups.</p>
+</div>
+<div class="w-24 h-24 bg-slate-100 dark:bg-slate-700 rounded-lg flex items-center justify-center bg-contain bg-no-repeat bg-center" data-alt="Epavance Flare Control product packaging in dark blue bottle" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyextrgSMWcixF31QGQT2z6qAzVgA3Bi-wMKAIT9-jUJxC8ns-oONXjipALKBWRU7b15dS6amAsaTXsQSOhCnLRu4XeVJ2ugaNt7hXwaUANNwHzw5JohxUeGxE-0w-tkOJ0vydm1dStjKnWSywGXBdFbJjW1qgoj13UIGyCS_fI9I9N62FSo2KrMpS-A35KF626pfBDKjQ4zfyCadtSY8_99zYvPoKJzQuN3d0PhR-0_yTLmQL9Rcuzf3nJFbIY3vaDliEkExVBy6E');"></div>
+</div>
+<div class="flex items-baseline gap-1 mb-6 relative z-10">
+<span class="text-4xl font-black text-[#0d131b] dark:text-white">£34.99</span>
+<span class="text-slate-500 font-medium">/ pack (14 days)</span>
+</div>
+<ul class="flex flex-col gap-3 mb-8 flex-1 relative z-10">
+<li class="flex items-center gap-3 text-sm text-[#0d131b] dark:text-slate-300">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                        High caloric density for weight maintenance
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#0d131b] dark:text-slate-300">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                        Rapid absorption peptides
+                    </li>
+<li class="flex items-center gap-3 text-sm text-[#0d131b] dark:text-slate-300">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                        Acute inflammation support
+                    </li>
+</ul>
+<button class="w-full h-12 rounded-lg bg-secondary hover:bg-secondary-dark text-white font-bold transition-colors flex items-center justify-center gap-2 shadow-lg shadow-secondary/20 relative z-10">
+                    Add to Cart <span class="material-symbols-outlined text-sm">shopping_basket</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-slate-50 dark:bg-slate-900 border-t border-[#e7ecf3] dark:border-slate-800">
+<div class="px-4 md:px-10 mx-auto max-w-[960px] text-center">
+<h2 class="text-2xl md:text-3xl font-bold text-[#0d131b] dark:text-white mb-8">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-slate-800 rounded-lg border border-[#cfd9e7] dark:border-slate-700 p-4 text-left cursor-pointer hover:border-primary transition-colors">
+<div class="flex justify-between items-center">
+<h3 class="font-bold text-[#0d131b] dark:text-white">Is a prescription required?</h3>
+<span class="material-symbols-outlined text-slate-400">expand_more</span>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-lg border border-[#cfd9e7] dark:border-slate-700 p-4 text-left cursor-pointer hover:border-primary transition-colors">
+<div class="flex justify-between items-center">
+<h3 class="font-bold text-[#0d131b] dark:text-white">How quickly will I see results?</h3>
+<span class="material-symbols-outlined text-slate-400">expand_more</span>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-lg border border-[#cfd9e7] dark:border-slate-700 p-4 text-left cursor-pointer hover:border-primary transition-colors">
+<div class="flex justify-between items-center">
+<h3 class="font-bold text-[#0d131b] dark:text-white">Can I take this with my current medication?</h3>
+<span class="material-symbols-outlined text-slate-400">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-white dark:bg-background-dark border-t border-[#e7ecf3] dark:border-slate-800 pt-16 pb-8">
+<div class="px-4 md:px-10 mx-auto max-w-[1280px]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+<div class="flex flex-col gap-4">
+<a class="flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-primary !text-[32px]">medication_liquid</span>
+<h2 class="text-xl font-bold text-[#0d131b] dark:text-white">Epavance</h2>
+</a>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Pioneering clinical nutrition for Inflammatory Bowel Disease. Supporting your journey to remission.
+                </p>
+<div class="flex gap-4 mt-2">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">smart_display</span></a>
+</div>
+</div>
+<div>
+<h3 class="font-bold text-[#0d131b] dark:text-white mb-4">Shop</h3>
+<ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Epavance Maintenance</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">EPAVANCE+</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Bundles</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Accessories</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-[#0d131b] dark:text-white mb-4">Support</h3>
+<ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">HCP Portal</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">FAQs</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-[#0d131b] dark:text-white mb-4">Medical Disclaimer</h3>
+<p class="text-xs text-slate-500 dark:text-slate-500 leading-relaxed">
+                    Epavance products are Foods for Special Medical Purposes (FSMP) and must be used under medical supervision. Not suitable for use as a sole source of nutrition unless directed by a physician.
+                </p>
+</div>
+</div>
+<div class="border-t border-[#e7ecf3] dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-500">
+<p>© 2023 Epavance Ltd. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-[#0d131b] dark:hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-[#0d131b] dark:hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-[#0d131b] dark:hover:text-white transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
