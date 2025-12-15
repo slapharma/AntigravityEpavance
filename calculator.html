@@ -39,8 +39,158 @@
             </div>
         </section>
 
-        <section class="calculator-section">
+        <!-- Assessment Wizard -->
+        <section id="assessment-section" class="assessment-section">
             <div class="container">
+                <div class="assessment-container">
+
+                    <!-- Progress Bar -->
+                    <div class="assessment-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill" style="width: 25%;"></div>
+                        </div>
+                        <div class="step-indicator">Step <span id="current-step">1</span> of 4</div>
+                    </div>
+
+                    <!-- Step 1: Demographics -->
+                    <div class="assessment-step active" id="step-1">
+                        <h2>Tell us about yourself</h2>
+                        <p class="step-desc">This helps us personalize your results based on population averages.</p>
+
+                        <div class="form-group">
+                            <label>Age Range</label>
+                            <div class="option-grid">
+                                <button type="button" class="option-btn" onclick="selectOption(this, 'age', '18-30')">18
+                                    - 30</button>
+                                <button type="button" class="option-btn" onclick="selectOption(this, 'age', '31-50')">31
+                                    - 50</button>
+                                <button type="button" class="option-btn" onclick="selectOption(this, 'age', '51-70')">51
+                                    - 70</button>
+                                <button type="button" class="option-btn"
+                                    onclick="selectOption(this, 'age', '70+')">70+</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="option-grid">
+                                <button type="button" class="option-btn"
+                                    onclick="selectOption(this, 'gender', 'Male')">Male</button>
+                                <button type="button" class="option-btn"
+                                    onclick="selectOption(this, 'gender', 'Female')">Female</button>
+                            </div>
+                        </div>
+
+                        <div class="step-actions">
+                            <button class="btn btn-primary" onclick="nextStep(2)">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Health Profile -->
+                    <div class="assessment-step" id="step-2">
+                        <h2>Health Profile</h2>
+                        <p class="step-desc">Do you have any of the following conditions? (Select all that apply)</p>
+
+                        <div class="option-grid col-2">
+                            <button type="button" class="option-btn" onclick="toggleOption(this, 'conditions', 'IBD')">
+                                <strong>IBD</strong><br><span class="small">Crohn's or Colitis</span>
+                            </button>
+                            <button type="button" class="option-btn" onclick="toggleOption(this, 'conditions', 'IBS')">
+                                <strong>IBS</strong><br><span class="small">Irritable Bowel Syndrome</span>
+                            </button>
+                            <button type="button" class="option-btn"
+                                onclick="toggleOption(this, 'conditions', 'Reflux')">
+                                <strong>Reflux / GERD</strong>
+                            </button>
+                            <button type="button" class="option-btn"
+                                onclick="toggleOption(this, 'conditions', 'Arthritis')">
+                                <strong>Arthritis</strong><br><span class="small">Joint Pain</span>
+                            </button>
+                            <button type="button" class="option-btn full-width"
+                                onclick="toggleOption(this, 'conditions', 'None')">None of the above</button>
+                        </div>
+
+                        <div class="step-actions">
+                            <button class="btn btn-outline" onclick="prevStep(1)">Back</button>
+                            <button class="btn btn-primary" onclick="nextStep(3)">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Current Routine -->
+                    <div class="assessment-step" id="step-3">
+                        <h2>Current Routine</h2>
+                        <p class="step-desc">Are you currently taking any Omega-3 supplements?</p>
+
+                        <div class="option-list">
+                            <button type="button" class="option-btn list-btn"
+                                onclick="selectOption(this, 'supplements', 'None')">
+                                No, I don't take any supplements
+                            </button>
+                            <button type="button" class="option-btn list-btn"
+                                onclick="selectOption(this, 'supplements', 'Standard')">
+                                Yes, Standard Fish Oil (Drugstore brand)
+                            </button>
+                            <button type="button" class="option-btn list-btn"
+                                onclick="selectOption(this, 'supplements', 'HighEPA')">
+                                Yes, High Strength / Prescription EPA
+                            </button>
+                            <button type="button" class="option-btn list-btn"
+                                onclick="selectOption(this, 'supplements', 'Vegan')">
+                                Yes, Algae / Vegan Omega-3
+                            </button>
+                        </div>
+
+                        <div class="step-actions">
+                            <button class="btn btn-outline" onclick="prevStep(2)">Back</button>
+                            <button class="btn btn-primary" onclick="calculateAssessment()">See Results</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Results & Offer -->
+                    <div class="assessment-step" id="step-4">
+                        <div class="assessment-result-card">
+                            <div class="result-header">
+                                <h2>Your Omega-3 Profile</h2>
+                                <div class="score-badge">Estimated Index: <span id="estimated-score">4.0%</span></div>
+                            </div>
+
+                            <div class="result-body">
+                                <p id="result-text">Based on your inputs, your Omega-3 levels are likely suboptimal.</p>
+
+                                <div class="target-box">
+                                    <h3>Your Ideal Target: 8% - 10%</h3>
+                                    <p>Reaching this level is critical for managing inflammation and supporting
+                                        long-term health.</p>
+                                </div>
+
+                                <div class="offer-box">
+                                    <div class="offer-tag">LIMITED TIME OFFER</div>
+                                    <h3>Get Tested for FREE</h3>
+                                    <p>Don't guess. Know for sure. Get a <strong>FREE Omega-3 Index Test Kit</strong>
+                                        (Value $50) when you subscribe to EPAVANCE today.</p>
+                                    <a href="index.html#product" class="btn btn-primary btn-lg btn-block">Claim Free
+                                        Test & Subscribe</a>
+                                    <p class="offer-sub">100% Money-back guarantee. Cancel anytime.</p>
+                                </div>
+                            </div>
+
+                            <div class="result-footer">
+                                <p>Already know your score?</p>
+                                <button class="btn btn-text" onclick="showCalculator()">Use the Dosage Calculator
+                                    &rarr;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator-section" class="calculator-section" style="display: none;">
+            <div class="container">
+                <div class="section-header-row">
+                    <button class="btn btn-text" onclick="showAssessment()">&larr; Back to Assessment</button>
+                </div>
                 <div class="calculator-container">
                     <div class="calculator-inputs">
 

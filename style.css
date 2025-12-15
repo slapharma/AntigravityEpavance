@@ -76,6 +76,10 @@ h2 {
     font-size: 2.5rem;
 }
 
+#rearrange-with-drag-and-drop {
+    color: #ff69b4;
+}
+
 p {
     margin-bottom: 1rem;
     color: #4A5568;
